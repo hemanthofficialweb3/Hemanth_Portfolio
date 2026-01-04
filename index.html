@@ -1,0 +1,188 @@
+push<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>T Hemanth — AI & ML Enthusiast</title>
+  <meta name="description" content="T Hemanth — AI & ML Enthusiast | Hackathon Projects Creator. Portfolio site." />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Play CDN (no build step) + custom theme -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0d6efd', /* blue */
+            accent: '#8cff9e',  /* soft neon / light green */
+            darkgray: '#111827'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg: white;
+    }
+    /* small utility for subtle glass card */
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.5));
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+  <header class="sticky top-0 z-40 bg-white/60 backdrop-blur border-b border-gray-100">
+    <div class="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-primary flex items-center justify-center text-white font-semibold">TH</div>
+        <div class="hidden sm:block">
+          <p class="text-sm text-gray-600">T Hemanth</p>
+          <p class="text-xs text-gray-500 -mt-0.5">AI & ML Enthusiast</p>
+        </div>
+      </a>
+      <nav class="text-sm space-x-4">
+        <a href="#projects" class="text-gray-700 hover:text-primary">Projects</a>
+        <a href="#about" class="text-gray-700 hover:text-primary">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-primary">Contact</a>
+        <a href="/resume.pdf" class="inline-block ml-3 px-3 py-1 rounded-md bg-primary text-white hover:brightness-95">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section class="grid gap-8 md:grid-cols-3 items-center">
+      <div class="md:col-span-2">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-darkgray">
+          Hi — I’m <span class="text-primary">T Hemanth</span>.
+        </h1>
+        <p class="mt-3 text-lg text-gray-600 max-w-xl">
+          <span id="typed" class="inline-block text-gray-800 font-semibold"></span>
+        </p>
+
+        <p class="mt-6 text-gray-700">
+          I am T Hemanth, a B.Tech CSE (AI–ML) student at Siddharth Institute of Engineering and Technology.
+          I am passionate about Artificial Intelligence and Machine Learning, with hands-on experience building projects through hackathons. I enjoy learning new technologies and converting innovative ideas into real-world solutions.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#projects" class="px-4 py-2 rounded-md border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition inline-flex items-center gap-2">
+            View Projects
+          </a>
+          <a href="/resume.pdf" download class="px-4 py-2 rounded-md bg-accent text-darkgray font-medium hover:brightness-95 transition">
+            Download Resume
+          </a>
+          <a href="mailto:hemanthofficial02@gmail.com" class="px-4 py-2 rounded-md border border-gray-200 hover:bg-gray-50 transition">Contact</a>
+        </div>
+
+        <div class="mt-8 text-sm text-gray-500">
+          <strong>Primary:</strong> Blue • <strong>Accent:</strong> Soft neon green • <strong>Font:</strong> Inter
+        </div>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <div class="w-44 h-44 rounded-xl overflow-hidden border-2 border-gray-100 card shadow-lg">
+          <!-- Placeholder avatar (replace later with your photo at /assets/profile.jpg or update path) -->
+          <img src="https://ui-avatars.com/api/?name=T+Hemanth&background=0d6efd&color=ffffff&size=512" alt="T Hemanth" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mt-16">
+      <h2 class="text-2xl font-bold text-darkgray">Projects</h2>
+      <p class="mt-2 text-gray-600">A selection of hackathon projects and prototypes.</p>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2">
+        <!-- Project card (placeholder) -->
+        <article class="p-5 rounded-lg border border-gray-100 card hover:shadow-md transition">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Hackathon Project</h3>
+              <p class="mt-1 text-sm text-gray-600">Developed an innovative solution during a college hackathon focusing on real-world problem solving and teamwork.</p>
+              <div class="mt-3 text-xs text-gray-500">
+                Tech: Python · AI/ML · Web Technologies
+              </div>
+            </div>
+            <div class="text-sm flex flex-col items-end gap-2">
+              <a href="https://github.com/hemanthofficial1" target="_blank" rel="noopener" class="text-primary hover:underline">GitHub</a>
+              <a href="#" class="text-gray-500">View case</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more project cards as you update -->
+      </div>
+
+      <div class="mt-6">
+        <a href="https://github.com/hemanthofficial1" target="_blank" class="text-sm text-primary hover:underline">View more on GitHub →</a>
+      </div>
+    </section>
+
+    <!-- About / Skills -->
+    <section id="about" class="mt-16">
+      <h2 class="text-2xl font-bold text-darkgray">About & Skills</h2>
+      <div class="mt-4 grid gap-6 sm:grid-cols-2">
+        <div>
+          <p class="text-gray-700">I'm studying B.Tech in CSE with an AI–ML focus. I enjoy participating in hackathons where I can rapidly prototype ML-powered solutions and collaborate with teammates to solve practical problems.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-800">Skills</h4>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-700">Python</span>
+            <span class="px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-700">Machine Learning</span>
+            <span class="px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-700">Data Science</span>
+            <span class="px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-700">Web Tech</span>
+            <span class="px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-700">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-16 mb-20">
+      <h2 class="text-2xl font-bold text-darkgray">Contact</h2>
+      <p class="mt-2 text-gray-600">Want to collaborate or ask about a project? Reach out via email or GitHub.</p>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 items-start">
+        <div class="p-5 rounded-lg border border-gray-100 card">
+          <h4 class="font-semibold text-gray-900">Email</h4>
+          <a class="text-primary mt-2 block" href="mailto:hemanthofficial02@gmail.com">hemanthofficial02@gmail.com</a>
+
+          <h4 class="font-semibold text-gray-900 mt-4">Social</h4>
+          <ul class="mt-2 text-gray-600 space-y-1">
+            <li><a href="https://github.com/hemanthofficial1" target="_blank" class="hover:underline text-gray-700">GitHub — hemanthofficial1</a></li>
+            <li><span class="text-gray-400">LinkedIn — placeholder</span></li>
+            <li><span class="text-gray-400">Instagram — placeholder</span></li>
+          </ul>
+        </div>
+
+        <div class="p-5 rounded-lg border border-gray-100 card">
+          <h4 class="font-semibold text-gray-900">Quick message</h4>
+          <p class="text-sm text-gray-600 mt-2">This site uses a mailto link — clicking the button below opens your email client.</p>
+          <a href="mailto:hemanthofficial02@gmail.com?subject=Hello%20Hemanth" class="mt-4 inline-block px-4 py-2 rounded-md bg-primary text-white hover:brightness-95">Email me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-100">
+    <div class="max-w-4xl mx-auto px-6 py-6 text-sm text-gray-500">
+      © <span id="year"></span> T Hemanth — Built with Tailwind • Hosted on GitHub Pages
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
